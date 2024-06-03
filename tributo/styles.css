@@ -1,0 +1,116 @@
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    color: black;
+}
+
+.img1, img2, img3{
+    width: 500px;
+    height: 400px;
+}
+
+.primeiraparte{
+    text-align: center;
+}
+
+.img1{
+    margin: 20px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.filmes-criados{
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 20px;
+}
+
+.segundadiv{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;  
+    background-color: rgb(122, 29, 98);
+    width: 80%;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+}
+
+.lalaland{
+    width: 600px;
+    padding: 20px 20px 20px 0px;
+    font-size: 20px;
+}
+
+.img2{
+    height: 300px;
+    margin: 20px;
+    margin-left: 40px;
+    border-color: black;
+    border-style: solid;
+}
+
+.terceiradiv{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;  
+    background-color: rgb(27, 14, 83);
+    width: 80%;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+}
+
+.whiplash{
+    width: 600px;
+    padding: 20px 0px 20px 45px;
+    font-size: 20px;
+    color: white
+    
+}
+
+.img3{
+    height: 300px;
+    margin: 20px;
+    border-color: black;
+    border-style: solid;
+}
+
+.citacao{
+    background-color: rgb(171, 171, 171);
+    margin-top: 100px;
+    margin-left: 10%;
+    width: 80%;
+    border-style: solid;
+    border-color: black;
+}
+
+.texto{
+    padding: 50px 50px 0px 50px;
+    font-size: 40px;
+    font-style:oblique;
+    font-weight: bold;
+}
+
+.autoria{
+    margin-left: 65%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-family: serif;
+    font-style: oblique;
+}
+
+.eu{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 400;
+}

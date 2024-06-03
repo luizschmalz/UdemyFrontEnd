@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: sans-serif;
+    background-image: url("assets/tenis.jpg")
+}
+
+.primeirocontainer{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    color: #fff;
+    background-color: #91999e;
+}
+
+.titulo{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.subtittle{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.segundocontainer{
+    background-color: #fdfdfd;
+    color: #444;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: -70px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.span{
+    color:red
+}
+
+.nometenis, 
+.datatenis,
+.image,
+.explicacaovenda,
+.valor{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.marcatenis, .avariastenis{
+    display: flex;
+    justify-content: center;
+}
+
+.submit{
+    background-color: #91999e;
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.submit:hover{
+    background-color: #fff;
+    border-color: #91999e;
+    color: #91999e
+}

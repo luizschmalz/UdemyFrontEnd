@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Venda de tênis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="index.php" method="post">
+        <div class="primeirocontainer">
+            <div class="titulo">Venda seu tênis usado aqui!</div>
+            <div class="subtittle">Preencha o formulário abaixo</div>
+        </div>
+        <div class="segundocontainer">
+            <div class="nometenis">
+                <label for="nometenis">Digite o nome do seu tênis: <span class="span">*</span></label>
+                <input type="text" name="nometenis" required>
+            </div>
+                <div class="marcatenis">
+                    <label for="marcatenis">Selecione a marca do seu tênis: <span class="span">*</span></label>
+                </div>
+                <div class="marcatenis">
+                    <input type="radio" value="nike" name="marcatenis" required>
+                    <label for="nike">Nike</label>
+                </div>
+                <div class="marcatenis">
+                    <input type="radio" value="adidas" name="marcatenis" required>
+                    <label for="adidas">Adidas</label>
+                </div>
+                <div class="marcatenis">
+                    <input type="radio" value="jordan" name="marcatenis" required>
+                    <label for="adidas">Jordan</label>
+                </div>
+                <div class="marcatenis">
+                    <input type="radio" value="newbalance" name="marcatenis" required>
+                    <label for="newbalance">New Balance</label>
+                </div>
+                <div class="marcatenis">
+                    <input type="radio" value="puma" name="marcatenis" required>
+                    <label for="puma">Puma</label>
+                </div>
+                <div class="marcatenis">
+                    <input type="radio" value="outra" name="marcatenis" required>
+                    <label for="outra">Outra</label>
+                    <input type="text" name="marcatenis">
+                </div>
+            <div class="datatenis">
+                <label for="data">Nos informe quando você adquiriu o tênis <span class="span">*</span></label>
+                <input type="date" name="data" required>
+            </div>
+            <div class="avariastenis">
+                <label for="avarias">Selecione as avarias do seu tênis: <span class="span">*</span></label>
+            </div>
+            <div class="avariastenis">
+                <input type="checkbox" value="rasgado" name="avarias">
+                <label for="rasgado">Rasgado</label>
+            </div>
+            <div class="avariastenis">
+                <input type="checkbox" value="manchado" name="avarias">
+                <label for="manchado">Manchado</label>  
+            </div>
+            <div class="avariastenis">
+                <input type="checkbox" value="descosturado" name="avarias">
+                <label for="descosturado">Descosturado</label>
+            </div>
+            <div class="avariastenis">
+                <input type="checkbox" value="descascado" name="avarias">
+                <label for="descascado">Descascado</label>
+            </div>
+            <div class="avariastenis">
+                <input type="checkbox" value="outro" name="avarias">
+                <label for="outro">Outro</label>
+                <input type="text" name="avarias">
+            </div>
+            <div class="image">
+                <label for="foto">Envie uma foto do seu tênis: <span class="span">*</span></label>
+                <input type="file" name="foto" required>
+            </div>
+            <div class="explicacaovenda">
+                <label for="explicacao">Nos explique por que você quer vender seu tênis:</label>
+                <textarea id ="explicacao" name="explicacao"></textarea>
+            </div>
+            <div class="valor">
+                <label for="valor">Por qual valor você deseja vender seu tênis? <span class="span">*</span></label>
+                <input type="number" name="valor">
+            </div>
+
+            <input class ="submit"type="submit" value="Enviar">    
+        </div>
+</body>
+</html> 
