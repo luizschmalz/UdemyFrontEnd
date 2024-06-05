@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.partespreenchidas {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex: 1 1 0;
+    width: 50%;
+}	
+
+.imagens img{
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+
+.data{
+    text-align: center;
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;  
+    margin-top: 30px;
+}
+
+.data img{
+    margin-right: 15px;
+    margin-top: 45px;
+    max-width: 175px;
+    height: 51px;
+}
+
+.data form{
+    display: block;
+    font-size: 12px;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.data form input{
+    padding:10px;
+    margin: 10px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 250px;
+}
+
+.data form input[type='submit']{
+    background-color: #b2dffc;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #b2dffc;
+    cursor: pointer;
+}
+
+.separator{
+    position: relative;
+}
+
+.line{
+    border-bottom: 1px solid #dbdbdb;
+    width: 250px;
+    margin: 15px auto 25px;
+}
+
+.separator span {
+    position: absolute;
+    text-transform: uppercase;
+    color: #bbb;
+    background-color: #fff;
+    margin-top: -8px;
+    margin-left: -20px;
+    width: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.outroslinks{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.outroslinks a{
+    text-decoration: none;
+    margin: auto 0;
+    margin-left: 8px;
+}
+
+.outroslinks span{
+    color: #385185;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.outroslinks img{
+    width: 26px;
+    height: 26px;
+    margin: auto 0;
+
+}
+
+.esqueceusenha{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 12px;
+    
+}
+
+.esqueceusenha a{
+    margin-top: -10px;
+    text-decoration: none;
+    color: gray;
+}
+
+.naoconta{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.naoconta a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #385185;
+    font-weight: 600;
+}
+
+.appcontainer{
+    font-size: 14px;
+}
+
+.appcontainer img{
+    max-width: 130px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.appcontainer a{
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    max-width: 100%;
+    color: #474545;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 40px;
+    font-size: 10px;
+}
+
+footer nav p{
+    font-size: 11px;
+}
+
+@media (max-width: 450px){
+    body{
+        background-color: #fff;
+    }
+    .imagens{
+        display: none;
+    }
+    .data{
+        border: none;
+    }
+
+}
