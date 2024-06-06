@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    background-color: #211e1e;
+    position: fixed;
+}
+
+
+nav ul{
+    display: flex;
+    width: 50%;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #211e1e;
+}
+
+.logo img{
+    background-color: #211e1e;
+    width: 50px;
+    height: 50px;
+}
+
+.logo{
+    background-color: #211e1e;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+nav li{
+    background-color: #211e1e;
+    list-style: none;
+}
+
+nav a{
+    background-color: #211e1e;  
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover{
+    color: #fafafa;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    background-color: #514949;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.espacoblog{
+    width: 85%;
+}
+
+.espacoblog h1{
+    text-align: center;
+    background-color: #514949;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 2%;
+}
+
+
+.filmes figure img{
+    width: 60%;
+    margin: 2% 20%;
+    border-radius: 5px;}
+
+.filmes h3{
+    background-color: #514949;
+    color: #fff;
+    padding-left: 2%;
+    padding-top: 4%;  
+}
+
+.filmes p{
+    color: #fff;
+    background-color: #514949;
+    padding: 2% 5%;
+    font-size: 14px;
+}
+
+.filmes figure, .filmes figcaption{
+    color: #fff;
+    background-color: #514949;
+    text-align: center;
+}
+
+.filmes figcaption{
+    margin-top: -2%;
+}
+
+.critica{
+    margin-top: -2%;
+}
+
+aside{
+    margin-top: -41px;
+    max-height: 100%;
+    background-color: #2c0229;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+aside ul{
+    list-style: none;
+    padding: 10px;
+}
+
+aside li{
+    padding: 100px;
+}   
+
+aside a{
+    text-decoration: none;
+    color: #fff
+}
+
