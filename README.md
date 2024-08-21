@@ -1,1 +1,1 @@
-readme
+Projetos relativos ao curso 'Formação Front-end - HTML, CSS, JavaScript, React e +' da Udemy ensinado por Matheus Battisti. A ideia é refazer os projetos propostos com minhas própias mãos, ou seja, fazer tudo proposto tendo uma referência mas fazendo do 0.
