@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #797473;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color: #ccc;
+    height: 30%;
+    box-shadow: 1px 1px 1px;
+    border-radius: 3rem;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.input{
+    display: flex;
+    padding: 1rem;
+}
+
+.container h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.container input{
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    border: 1px solid #000;
+}
+
+.container label{
+    padding: 0.3rem;
+}
+
+#botao{
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    opacity: 0.7;
+    border: 1px solid #000;
+}	
+
+#limpar{
+    padding: 1rem;
+    background-color: #0b8542;
+    color: #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-left: 2rem;
+    border: 1px solid #000;
+}
+
+#botao:hover{
+    opacity: 1;
+}
+
+#limpar:hover{
+    opacity: 1;
+}
+
+
+.hide{
+    display: none !important;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #ccc;
+    height: 50vh;
+    box-shadow: 1px 1px 1px;
+    border-radius: 3rem;
+}
+
+#tittle{
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+}
+
+#subtittle{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;;
+    margin-bottom: 1.5rem;
+}
+
+.imctable{
+    display: flex;
+    flex-direction: column;
+}
+
+.table-header,
+.table-data{
+    display: flex;
+    justify-content: space-between !important;
+    margin: 0 0.5rem;
+    border-bottom: solid 1px #333;
+    text-align: center;
+    padding: 0.7rem;
+}
+
+
+#voltar{
+    padding: 0.5rem;
+    background-color: #0b8542;
+    color: #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    opacity: 0.7;
+    border: 1px solid #000;
+    width: 6rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+#voltar:hover{
+    opacity: 1;
+}
+
+.good{
+    color: #12db34;
+}
+
+.low{
+    color: #dbce12;
+}
+
+.medium{
+    color: #db6212;
+}
+
+.high{
+    color: #db1912;
+}
+
+
+
+@media(max-width: 768px){
+    .container{
+        width: 80%;
+        height: 50vh;
+    }
+    .container h1{
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .infos{
+        width: 80%;
+        height: 70vh;
+    }
+    #tittle{
+        font-size: 2rem;    
+    }
+    
+    #subtittle{
+        font-size: 1rem;
+    }
+}
