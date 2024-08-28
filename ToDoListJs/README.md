@@ -1,0 +1,1 @@
+Projeto mais complexo até então, fiz um todolist avançado com local storage, salvando as tarefas criadas, alterando seus valores e tudo mais.

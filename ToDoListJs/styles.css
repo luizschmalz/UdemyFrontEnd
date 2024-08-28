@@ -1,0 +1,186 @@
+/* principais ajustes */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+main{
+    background-image: url('assets/backgroundimg.jpg');
+    background-size: cover;
+    height: 100vh;    
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    opacity: 1;
+    width: 50vh;
+    min-height: 50vh;
+    background-color: #ccc;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px;
+}
+
+.hide{
+    display: none;
+}
+
+/* personalizações especificas */
+
+button{
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: #102f5e;
+    color: #fff;
+}
+
+button:hover > i{
+    color: #fff;
+}
+
+button i{
+    color: #102f5e;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.container h1{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #111;
+    border-bottom: 1px solid #111;
+}
+
+/* Adicionar tarefas */
+
+.addtaskdiv{
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #111;
+    width: 90%;
+    text-align: center;
+}
+
+#addtask input{
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Editar tarefas */
+
+
+.editdiv{
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #111;
+    width: 80%;
+    text-align: center; 
+}
+
+#edittask input{
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Pesquisar tarefas */     
+
+.searchdiv{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    font-size: 1.4rem;
+    width: 80%;
+    text-align: center; 
+}
+
+#searchtask{
+    padding-right: 1rem;
+    margin-bottom: 0.25rem;
+    border-right: 1px solid #111;
+    width: 65%;
+}
+
+#searchtask h4{
+    font-size: 1.2rem;
+}
+
+#searchtask input{
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.filter{
+    font-size: 1.2rem;
+    text-align: left;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    width: 35%;
+}
+
+#filtro{
+    width: 90%;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.25rem;
+}
+
+/* lista de tarefas */
+
+.task{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.task h2{
+    margin-bottom: 1rem;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #111;
+    transition: 0.3s;
+}
+
+.todo h3{
+    text-align: left;
+    flex: 1
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done{
+    background-color: #395169;
+}
+
+.done h3{
+    text-decoration: line-through;
+    color: #fff;
+    font-style: italic;
+}
