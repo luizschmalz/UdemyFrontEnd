@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: #222;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-around;
+    border-bottom: 1px solid #fff;
+}
+
+header h1{
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+.searchdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    color: #ddd;
+    gap: 1rem;
+}
+
+.searchdiv input{
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: #ddd;
+    margin-left: 1%;
+    font-weight: bold;
+}
+
+.searchdiv input::placeholder{ 
+    color: #ddd;
+}
+
+
+header button{
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #444;
+    border: 2px solid #ddd;
+    color: #ddd;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0,3s;
+}
+
+header button:hover{
+    opacity: 1;
+    background-color: #ddd;
+    color: #444;
+}
+
+.addnote{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+
+#addnote{
+    width: 30%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: #ddd;
+}
+
+#add{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #444;
+    border: 2px solid black;
+    opacity: 0.8;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+#addnote::placeholder{
+    color: #ddd;
+}
+
+#add:hover{
+    opacity: 1;
+    background-color: #666;;
+}
+
+.notes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note{
+    width: 250px;
+    height: 200px;
+    margin-top: 1rem;
+    margin-left: 5%;
+    background-color: #444;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+.note textarea{
+    padding-left: 0.5rem;
+    height: 100%;
+    color: #ddd;
+    background-color: transparent;
+    resize: none;
+    border: none;
+    outline: none;
+    margin-top: 0.7rem;
+    font-size: 1rem;
+}
+
+.note .bi-pin{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #222;
+    color: #ddd;
+}
+
+.note .bi-x-lg,
+.note .bi-file-earmark-plus{
+    position: absolute;
+    color: #222;
+    right: 10px;
+    top: 10px;
+    font-size: .9rem;
+    padding: 5px;
+    transition: .3s;
+    opacity: 0;
+}
+
+.note:hover > i{
+    opacity: 1;
+}
+
+.note .bi-file-earmark-plus{
+    top: 40px;
+}
+
+.note .bi-x-lg:hover,
+.note .bi-file-earmark-plus:hover{
+    color: #fff;
+   
+}
+
+.fixed{
+    background-color: #111;
+}
+
+@media(max-width: 420px){
+    header{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    header h1{
+        margin-bottom: 1rem;
+    }
+
+    .searchdiv{
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    #addnote{
+        width: 60%;
+    }
+
+    .note{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+}
