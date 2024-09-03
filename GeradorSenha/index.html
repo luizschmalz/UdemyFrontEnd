@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>  
+    <main>
+        <div class="img">
+            <h1>Seja Bem-vindo</h1>
+        </div>
+        <div class="container">
+            <h1>Crie sua conta!</h1>
+            <p>Preencha os dados para se cadastrar!</p>
+            <form action="">
+                <p>Nome</p>
+                <input type="text" placeholder="Digite seu nome">
+                <p>Email</p>
+                <input type="text" placeholder="Digite seu email">
+                <p>Senha</p>
+                <input type="text" placeholder="Digite sua senha">
+                <p>Confirmar senha</p>
+                <input type="text" placeholder="Confirme sua senha">
+            </form>
+            <p>Quer ajuda para gerar uma senha? <a href="" id="clique">Clique Aqui</a></p>
+            <div class="senha">
+                <p id="suasenha">Selecione as opções:</p>
+                <div class="selectsenha">
+                    <label for="digitos">Quantidade de digitos:</label>
+                    <input type="text" name="digitos" id='digitos'value="10">
+                </div>
+                <div class="selectsenha">
+                    <label for="numeros">Números:</label>
+                    <input type="checkbox" name='numeros' id='numbers' checked>
+                </div>
+                <div class="selectsenha">
+                    <label for="letras">Letras:</label>
+                    <input type="checkbox" name="letras" id='letras' checked>
+                </div>
+                <div class="selectsenha">
+                    <label for="simbolos">Simbolos:</label>
+                    <input type="checkbox" name="simbolos" id="simbolos" checked>
+                </div>
+                <button id="gerarSenha">Gerar senha</button>
+                <div class="senhadiv">
+                    <p id="senha"></p>
+                    <button id="copy" class="hide">Copiar senha</button>
+                </div>
+            </div>
+            <button class="cadastro">Cadastre-se</button>
+        </div>
+    </main>
+</body>
+</html>

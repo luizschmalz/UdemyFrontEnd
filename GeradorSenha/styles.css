@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    background-color: #102f5e;
+}
+
+main{
+    width: 70%;
+    min-height: 60vh;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: row;
+}
+
+.img{
+    width: 50%;
+    background-image: url('assets/wallpaper.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.img h1{
+    padding: 1rem;
+    word-spacing: 50rem;
+    color: #fff;
+    font-size: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+}
+
+input{
+    width:100%;
+    border: none;    
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #111;
+    background-color: #ccc;
+}
+
+input:focus{
+    outline: none;
+}
+
+h1, p {
+    margin: 0 auto;
+}
+
+p{
+    margin-bottom: 2rem;
+}
+
+button{
+    width: 30%;
+    align-self: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #102f5e;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.7;
+}
+
+button:hover{
+    opacity: 1;
+    color: #fff;
+}
+
+.container form p {
+    margin-bottom: 1rem;
+}
+
+@media(max-width:480px){
+    main{
+        width: 90%;
+        display: flex;
+        flex-direction: column
+    }
+    .img{
+        width: 100%;
+        margin-top: 50%;
+    }
+    .container{
+        width: 100%;
+    }
+}
+
+#clique{
+    text-decoration: none;
+    font-style: italic;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#clique:hover{
+    color: #102f5e;
+}
+
+.senha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 1rem;
+    border: 1px solid #102f5e;
+    width: 60%;
+    border-radius: 5px;
+}
+
+#suasenha{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+#senha{
+    font-weight: bold;
+    color: #102f5e;
+    align-self: center;
+    margin: auto;
+}
+
+.hide{
+    display: none !important;
+}
+
+.selectsenha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.selectsenha input{
+    max-width: 30px;
+}
+
+#gerarSenha{
+    width: 50%;
+}	
+
+.senhadiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.senhadiv button{
+    margin: 0;
+    padding: 0.5rem;
+}
+
+
+
+
