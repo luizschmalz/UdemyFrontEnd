@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Box Shadow</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="maincontainer">
+            <div class="inputdiv">
+                <h1>Configuração da box shadow</h1>
+                <div class="inputsdiv">
+                    <div class="inputs">
+                        <label for="horizontal">Deslocamento Horizontal:</label>
+                        <input type="range" id="horizontal" min='-100' max="100" value="5" >
+                    </div>
+                    <div class="inputText">
+                        <input type="text" id="horizontalText">
+                        <p>px</p>
+                    </div>
+                </div>
+                <div class="inputsdiv">
+                    <div class="inputs">
+                        <label for="vertical">Deslocamento Vertical:</label>
+                        <input type="range" id="vertical" name="vertical" min='-100' max="100" value="5" >
+                    </div>
+                    <div class="inputText">
+                        <input type="text" id="verticalText">
+                        <p>px</p>
+                    </div>
+                </div>
+                <div class="inputsdiv">
+                    <div class="inputs">
+                        <label for="borrao">Intensidade do borrão(Blur):</label>
+                        <input type="range" id="blur" name="borrao" min='0' max="100" value="10">
+                    </div>
+                    <div class="inputText">
+                        <input type="text" id="blurText">
+                        <p>px</p>
+                    </div>
+                </div>
+                <div class="inputsdiv">
+                    <div class="inputs">
+                        <label for="spread">Intensidade do Espalhamento(Spread):</label>
+                        <input type="range" id="spread" name="spread" min='-100' max="100" value="5" >
+                    </div>
+                    <div class="inputText">
+                        <input type="text" id="spreadText" value="5">
+                        <p>px</p>
+                    </div>
+                </div>
+                <div class="inputsdiv">
+                    <div class="inputs">
+                        <label for="color">Cor em hexadecimal:</label>
+                        <input type="color" id="color" name="color" value="#000000" >
+                    </div>
+                    <div class="inputText">
+                        <input type="text" id="colorText">
+                    </div>
+                </div>
+                <div class="inputsdiv">
+                    <div class="inputs">
+                        <label for="opacity">Opacidade:</label>
+                        <input type="range" id="opacity" name="opacity" min='0' max="1" value="1" step="0.01" >
+                    </div>
+                    <div class="inputText">
+                        <input type="text" id="opacityText">
+
+                    </div>
+                </div>
+                <div class="inputsdiv">
+                    <div class="inputs">
+                        <label for="inset">Sombra Interna? (Inset):</label>
+                        <input type="checkbox" id="inset" name="inset">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="previewdiv">
+                <h1>Preview do Efeito Gerado:</h1>
+                <div id="box">
+                </div>
+            </div>
+        </div>
+        <div class="copydiv">
+            <h1>Clique para copiar para seu arquivo CSS:</h1>
+            <div class="copy">
+                <p id="rule">box-shadow: <span></span>;</p>
+                <p id="webkit-rule">-webkit-box-shadow: <span></span>;</p>
+                <p id="moz-rule">-moz-box-shadow: <span></span>;</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
