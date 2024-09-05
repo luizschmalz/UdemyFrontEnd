@@ -1,0 +1,66 @@
+.container{
+    min-width: 400px;
+    min-height: 400px;
+    background-color: #1a1e33;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+#imcNumber, #imcClass{
+    padding: 0.5rem;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+}
+
+.imc-table{
+    display: block;
+    margin: 1rem;
+    font-size: 18px;
+}
+
+.table-header, .table-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+#backbtn{
+    padding: 10px;
+    background-color: #0b8542;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: .4s;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.good {
+    color: #12db34
+}
+
+.low{
+    color: #dbce12
+}
+
+.medium{
+    color: #db6212
+}
+
+.high{
+    color: #db1912;
+}
