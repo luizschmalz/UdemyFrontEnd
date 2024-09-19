@@ -1,6 +1,6 @@
 import { createContext, useReducer } from "react";
 
-import questions from "../data/questions_complete.js";
+import questions from "../data/questions.js";
 
 const STAGES = ["start", "category", "playing", "end"];
 
