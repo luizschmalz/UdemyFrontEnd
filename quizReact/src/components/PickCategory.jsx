@@ -22,7 +22,9 @@ const PickCategory = () => {
             {quizState.questions.map((question) => (
                 <button 
                 onClick={() => chooseCategory(question.category)}
-                key={question.category}>{question.category}</button>
+                key={question.category}>
+                    {question.category}
+                </button>
             ))}
         </div>
         <img src={Category} alt="" />

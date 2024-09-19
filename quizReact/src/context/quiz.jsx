@@ -10,6 +10,8 @@ const initialState = {
     currentQuestion: 0,
     score: 0, 
     answerSelected: false,
+    help: '',
+    remove: true,
 }
 
 const quizReducer = (state, action) => {
@@ -38,8 +40,10 @@ const quizReducer = (state, action) => {
             return {
                 ...state,
                 currentQuestion: nextQuestion,
-                gameStage: endgame ? STAGES[2] : STAGES[1],
+                gameStage: endgame ? STAGES[3] : state.gameStage,
                 answerSelected: false,
+                help: '',
+                remove: true,
             };
 
         case "RestartGame":
@@ -76,6 +80,30 @@ const quizReducer = (state, action) => {
                 gameStage: STAGES[2],
             }
 
+        case "ShowTip":
+            return {
+                ...state,
+                help: "tip",
+            }
+
+        case "RemoveOption":
+            const {options, resp} = action.payload
+            const otherOptions = options.filter((option) => option !== resp)  
+            const randomOption = Math.floor(Math.random() * otherOptions.length)
+            const newOptions = options.filter((option) => option !== otherOptions[randomOption])
+            
+            state.questions.options = newOptions   
+            
+            return {
+                ...state,
+                questions: state.questions.map((question, index) => 
+                    index === state.currentQuestion ? { ...question, options: newOptions } : question
+                ),
+                remove: false,
+                help: 'alredyhelped'
+            }
+            
+        
         default:
             return state;
     }

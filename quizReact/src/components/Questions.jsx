@@ -25,6 +25,16 @@ const Questions = () => {
             selectOption = {() => onSelectOption(option)} />
           ))}
       </div>
+      {!quizState.answerSelected && quizState.help==="" &&(
+        <>{currentQuestion.tip && <button
+        onClick={() => dispatch({type: 'ShowTip'})}>Dica</button>}
+        {quizState.remove === true &&
+        (<button onClick={() => dispatch({type: 'RemoveOption', payload: {options: currentQuestion.options, resp:currentQuestion.answer}})}>Excluir uma</button>)}
+        </>
+      )}
+      {!quizState.answerSelected && quizState.help === 'tip' && 
+      (<p>{currentQuestion.tip}</p>)
+      }
       {quizState.answerSelected && (
         <button onClick={()=> dispatch({type: "ChangeQuestion"}) }>Continuar</button>
       )}
