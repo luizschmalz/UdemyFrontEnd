@@ -1,0 +1,38 @@
+.admin-page h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.actions{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.edit-btn{
+    background-color: #dbce12;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #fff;
+    opacity: .7;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.delete-btn{
+    background-color: #db1912;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #fff;
+    opacity: .7;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.edit-btn:hover, .delete-btn:hover{
+    opacity: 1;
+}

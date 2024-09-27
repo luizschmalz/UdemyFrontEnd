@@ -1,0 +1,64 @@
+.newpost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newpost h2{
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.newpost form{
+    width: 80%;
+    height: 50vh;
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.form-control input, 
+.form-control textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #ccc;
+    border: none;
+    border-radius: 10px;
+}
+
+textarea{
+    resize: none;
+    height: 20vh;
+}
+
+.sendpostbtn{
+    width: 100%;
+    background-color: #ccc;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .3s;
+    opacity: .7;
+}
+
+.sendpostbtn:hover{
+    opacity: 1;
+}
