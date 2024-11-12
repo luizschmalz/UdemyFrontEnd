@@ -1,0 +1,5 @@
+DELETE http://localhost:3000/memories/672d3300278985217efcbc31
+
+###
+
+GET http://localhost:3000/memories/

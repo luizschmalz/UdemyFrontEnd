@@ -1,0 +1,21 @@
+.nav {
+    padding-left: 5%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1146a6;
+}
+
+
+.nav ul{
+    display: flex;
+    gap: 1rem;
+    padding-right: 2rem;
+}
+
+.nav a{
+    color: #Fff;
+}
+

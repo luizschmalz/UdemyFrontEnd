@@ -1,0 +1,60 @@
+.singleMemory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    margin-bottom: 100px;
+}
+
+.singleMemory h2{
+    color: #1146a6;
+}
+
+.singleMemory img{
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.comment-form{
+    width: 500px;
+}
+
+.comment-form form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 10%;
+}
+
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: .5rem;
+}
+
+.comment-form textarea{
+    height: 100px;
+    resize: none;
+}
+
+.comments-container{
+    width: 500px;
+    margin: 2rem auto;
+}
+
+.comment{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.comment-name{
+    font-weight: bold;
+    color: #555;
+}
