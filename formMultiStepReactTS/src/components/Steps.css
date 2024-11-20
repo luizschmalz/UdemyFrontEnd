@@ -1,0 +1,43 @@
+
+.steps{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.steps::after{
+    content: '';
+    position: absolute;
+    width: 400px;
+    border-bottom: 1px solid #333;
+    top: 20px;
+    z-index: 0;
+}
+
+.step{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+    background-color: #ccc;
+}
+
+.step svg{
+    font-size: 1.6rem;
+    margin-bottom: .2rem;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.active > svg{
+    fill: #7076f4
+}
